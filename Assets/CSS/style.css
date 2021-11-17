@@ -32,13 +32,28 @@ header a {
 	text-decoration: underline;
 }
 /* ? ******************************** MAIN **************************************/
-
+main {
+	height: auto;
+}
 /************** Banner ******************/
 .banner {
-	margin: 100px 15%;
-	background-color: red;
+	margin: 100px 15% 50px;
 	height: 500px;
 	background: url(/Assets/MEDIA/IMG/library.jpg) center/cover;
+}
+
+/************** Search ******************/
+.search {
+	padding: 0 33% 50px;
+}
+
+.search input {
+	width: 100%;
+	padding: 10px 20px;
+	font-size: 1rem;
+	color: rgb(49, 117, 169);
+	border-radius: 20px;
+	border: 1px solid rgb(49, 117, 169);
 }
 
 /* ? ******************************** MAIN END **************************************/
