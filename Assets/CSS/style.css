@@ -8,9 +8,11 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
 }
-main {
-	height: auto;
+body {
 	background-color: #fce5dc;
+}
+main {
+	height: 100%;
 }
 
 /************** HEADER **********************/
@@ -53,20 +55,23 @@ header a {
 	width: 100%;
 	padding: 10px 20px;
 	font-size: 1rem;
-	color: rgb(49, 117, 169);
+	color: #0b92b0;
 	border-radius: 20px;
-	border: 1px solid rgb(49, 117, 169);
-	background-color: #fce5dc;
+	border: 1px solid #0b92b0;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 /************** BOOK LIST ******************/
 .book-list {
 	margin: 0 15% 50px;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 50px 40px;
 }
 
 .book-list-title {
 	font-size: 25px;
 	font-weight: bold;
+	color: #0b92b0;
 }
 
 .book-wrapper {
@@ -74,8 +79,7 @@ header a {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-top: 20px;
-	background-color: #fff;
-	padding: 15px; /*TODO:1h06m35s*/
+	padding: 15px;
 }
 
 .book-item {
@@ -88,6 +92,7 @@ header a {
 	background: url(/Assets/MEDIA/IMG/library.jpg) center/cover;
 	margin-bottom: 15px;
 	box-shadow: 5px 5px 10px lightgray;
+	border-radius: 5px;
 }
 
 .book-title {
@@ -96,9 +101,11 @@ header a {
 }
 
 .book-author {
-	font-size: 1.125rem;
+	font-size: 1.125rem; //Rajout
 	color: #515151;
 	font-style: italic;
 }
+
+/*TODO:1h12m57s*/
 
 /* ? ******************************** MAIN END **************************************/
