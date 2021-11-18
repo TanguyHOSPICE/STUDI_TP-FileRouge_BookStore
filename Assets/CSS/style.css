@@ -7,18 +7,22 @@ body {
 	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
+	text-decoration: none;
 }
 body {
 	background-color: #fce5dc;
 }
 main {
 	height: 100%;
+	padding-top: 80px;
 }
 
 /************** HEADER **********************/
 header {
-	background-color: rgb(49, 117, 169);
+	background-color: rgb(160, 77, 21);
 	color: white;
+	position: fixed;
+	width: 100%;
 }
 
 header ul {
@@ -35,6 +39,9 @@ header ul li {
 
 header a {
 	color: white;
+}
+
+header a:hover {
 	text-decoration: underline;
 }
 /* ? ******************************** MAIN **************************************/
@@ -71,7 +78,7 @@ header a {
 .book-list-title {
 	font-size: 25px;
 	font-weight: bold;
-	color: #0b92b0;
+	color: rgb(163, 139, 117);
 }
 
 .book-wrapper {
@@ -84,11 +91,13 @@ header a {
 
 .book-item {
 	margin-bottom: 20px;
+	width: 22%;
 }
 
 .book-img {
 	height: 150px;
-	width: 150px;
+	max-width: 150px;
+	min-width: 150px;
 	background: url(/Assets/MEDIA/IMG/library.jpg) center/cover;
 	margin-bottom: 15px;
 	box-shadow: 5px 5px 10px lightgray;
@@ -98,14 +107,20 @@ header a {
 .book-title {
 	font-size: 1rem;
 	font-weight: bold;
+	color: #0b92b0;
 }
 
 .book-author {
-	font-size: 1.125rem; //Rajout
+	font-size: 1.125rem;
 	color: #515151;
 	font-style: italic;
 }
 
-/*TODO:1h12m57s*/
+.book-plus {
+	text-align: right;
+	padding: 20px;
+	font-style: italic;
+	cursor: pointer;
+}
 
 /* ? ******************************** MAIN END **************************************/
