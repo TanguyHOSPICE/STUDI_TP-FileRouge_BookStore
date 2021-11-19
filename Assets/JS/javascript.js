@@ -27,3 +27,4 @@ let cart =[
 let totalPrice ; // prix total du panier à stocker ds cette variable
 
 /*------------------------- */
+/* TODO: video 4:25m*/
