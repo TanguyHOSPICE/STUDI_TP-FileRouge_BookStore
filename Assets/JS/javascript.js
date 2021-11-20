@@ -66,4 +66,27 @@ if (card[i]) {//équivaut à card[1 === true]
 /*------------- */
 /* 4-Boucles*/
 /*------------- */
-// TODO:37m04s
+// TODO:59m32s
+//Classement meilleurs ventes:Par tri a bulles
+// function bubbleSort(books) {
+//     let length = books.length;  
+//     for (var i = 0; i < length; i++) { 
+//           for (var j = 0; j < (length - i - 1); j++) { 
+//                    if(books[j] > books[j+1]) {
+//                            var tmp = books[j]; 
+//                 books[j] = books[j+1]; 
+//                 books[j+1] = tmp; 
+//             }
+//         }        
+//     }
+// }
+ 
+// bubbleSort(books);
+
+// console.log(books);
+
+// Classement sorties récentes
+
+//Rechercher un titre de livre
+
+//Affichage des prix (croissant/décroissant)>ajouter des filtres
