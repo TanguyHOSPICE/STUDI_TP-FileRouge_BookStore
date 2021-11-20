@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-//TODO: JSON a Faire
-=======
 let books = [
   {
     id: "0",
@@ -38,9 +35,9 @@ let books = [
     author: "Victor Hugo",
     price: 14.95,
     category: "Drame",
-    releaseDate: new Date("1997,05,23"),
+    releaseDate: new Date("1998,05,23"),
     nbSales: 21,
     ndStock: 10,
   },
 ];
->>>>>>> Video4
+

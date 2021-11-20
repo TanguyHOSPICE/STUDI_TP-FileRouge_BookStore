@@ -62,3 +62,8 @@ if (card[i]) {//équivaut à card[1 === true]
     //ou card[i].qtt = card[i].qtt +1;
     console.log("Quantité après ajout: "+card[i].qtt++);
 }
+
+/*------------- */
+/* 4-Boucles*/
+/*------------- */
+// TODO:37m04s
