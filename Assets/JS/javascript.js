@@ -20,10 +20,11 @@ console.log(books);
 // Importer un fichier .json ds un fichier JS (ss Framework) nécessite
 
 //Tbl d'objet pour panier (avec 1 id et la quantité)
-let cart =[
+let card =[
     {id:"0", qtt:1},
     {id:"1", qtt:3},
 ];
+console.log(card);
 let totalPrice ; // prix total du panier à stocker ds cette variable
 
 /*------------- */
@@ -54,5 +55,10 @@ if (books[i].nbSales > books[i+1].nbSales) {
 
 }
 
-//Panier 
-// TODO:Video-4-53m06s
+//Panier: augmenter la qtité d'1 article 
+if (card[i]) {//équivaut à card[1 === true]
+    console.log("Quantité avant ajout: "+card[i].qtt++);
+    card[i].qtt++;//on incrémentecard[1.qtt]
+    //ou card[i].qtt = card[i].qtt +1;
+    console.log("Quantité après ajout: "+card[i].qtt++);
+}
