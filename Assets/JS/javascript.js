@@ -68,23 +68,30 @@ if (card[i]) {//équivaut à card[1 === true]
 /*------------- */
 // TODO:59m32s
 //Classement meilleurs ventes:Par tri a bulles
-// function bubbleSort(books) {
-//     let length = books.length;  
-//     for (var i = 0; i < length; i++) { 
-//           for (var j = 0; j < (length - i - 1); j++) { 
-//                    if(books[j] > books[j+1]) {
-//                            var tmp = books[j]; 
-//                 books[j] = books[j+1]; 
-//                 books[j+1] = tmp; 
-//             }
-//         }        
-//     }
-// }
+/*
+function bubbleSort(items) {
+    let length = items.length;  
+    for (var i = 0; i < length; i++) { 
+          for (var j = 0; j < (length - i - 1); j++) { 
+                   if(items[j] > items[j+1]) {
+                           var tmp = items[j]; 
+                items[j] = items[j+1]; 
+                items[j+1] = tmp; 
+            }
+        }        
+    }
+}
  
-// bubbleSort(books);
+bubbleSort(books[j]);
 
-// console.log(books);
+console.log(books[j]);
+*/
 
+fonction bubbleSort(array){
+    return array.sort(a,b)=>{return a-b}
+}
+let array = []
+console.log(bubbleSort(array));
 // Classement sorties récentes
 
 //Rechercher un titre de livre
