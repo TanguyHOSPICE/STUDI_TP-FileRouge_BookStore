@@ -72,7 +72,8 @@ if (card[i]) {//équivaut à card[1 === true]
 /* 4-Boucles*/
 /*------------- */
 
-//Classement meilleurs ventes:Par tri a bulles (1 erreur)
+//Classement meilleurs ventes:Par tri a bulles 
+//TODO:1 erreur voir video 6 - 6/10/21
     for (let i = 0; i < books.length; i++) { 
         for (let j = 0; j < (books.length - i - 1); j++) { //-i-1:pour éviter de reprendre au 1ier
             if(books[j].nbSales > books[j + 1].nbSales) {
