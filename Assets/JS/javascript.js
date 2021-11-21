@@ -73,11 +73,11 @@ if (card[i]) {//équivaut à card[1 === true]
 /*------------- */
 
 //Classement meilleurs ventes:Par tri a bulles 
-//TODO:1 erreur voir video 6 - 6/10/21
+//TODO:1 erreur voir video 6- 35m46s - 6/10/21
     for (let i = 0; i < books.length; i++) { 
         for (let j = 0; j < (books.length - i - 1); j++) { //-i-1:pour éviter de reprendre au 1ier
             if(books[j].nbSales > books[j + 1].nbSales) {
-                let tmp = books[j]; 
+                let tmp = books[j]; // je stock 
                 books[j] = books[j+1];
                 books[j + 1] = tmp; 
             }
