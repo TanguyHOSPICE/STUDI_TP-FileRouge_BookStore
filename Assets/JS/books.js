@@ -5,7 +5,7 @@ let books = [
     author: "Victor Hugo",
     price: 14.95,
     category: "Drame",
-    releaseDate: new Date("1997,05,23"),
+    releaseDate: new Date("1996,09,02"),
     nbSales: 124,
     nbStock: 150,
   },
