@@ -18,6 +18,7 @@ let nbSales =345;
 console.log("BOOK LIST"); 
 console.log(books);
 // Importer un fichier .json ds un fichier JS (ss Framework) nécessite
+console.log("-----------------------"); // !Provisoire
 
 //Tbl d'objet pour panier (avec 1 id et la quantité)
 let card =[
@@ -26,6 +27,7 @@ let card =[
 ];
 console.log(card);
 let totalPrice ; // prix total du panier à stocker ds cette variable
+console.log("-----------------------"); // !Provisoire
 
 /*------------- */
 /* 3-Conditions*/
@@ -38,6 +40,7 @@ if (books[0].nbStock === 0) {
 }else{
     console.log("Il en reste :"+ books[0].nbStock+ " exemplaires.");
 }
+console.log("-----------------------"); // !Provisoire
 
 //Sorties récentes
 if (books[i].releaseDate > books[i+1].releaseDate) {
@@ -46,6 +49,7 @@ if (books[i].releaseDate > books[i+1].releaseDate) {
     console.log(books[i+1].title + " est le plus récent des deux livres.");
 
 }
+console.log("-----------------------"); // !Provisoire
 
 //Meilleures ventes
 if (books[i].nbSales > books[i+1].nbSales) {
@@ -54,6 +58,7 @@ if (books[i].nbSales > books[i+1].nbSales) {
     console.log(books[i+1].title + " a été le plus vendu");
 
 }
+console.log("-----------------------"); // !Provisoire
 
 //Panier: augmenter la qtité d'1 article 
 if (card[i]) {//équivaut à card[1 === true]
@@ -66,34 +71,36 @@ if (card[i]) {//équivaut à card[1 === true]
 /*------------- */
 /* 4-Boucles*/
 /*------------- */
-// TODO:59m32s
-//Classement meilleurs ventes:Par tri a bulles
-/*
-function bubbleSort(items) {
-    let length = items.length;  
-    for (var i = 0; i < length; i++) { 
-          for (var j = 0; j < (length - i - 1); j++) { 
-                   if(items[j] > items[j+1]) {
-                           var tmp = items[j]; 
-                items[j] = items[j+1]; 
-                items[j+1] = tmp; 
+
+//Classement meilleurs ventes:Par tri a bulles (1 erreur)
+    for (let i = 0; i < books.length; i++) { 
+        for (let j = 0; j < (books.length - i - 1); j++) { //-i-1:pour éviter de reprendre au 1ier
+            if(books[j].nbSales > books[j + 1].nbSales) {
+                let tmp = books[j]; 
+                books[j] = books[j+1];
+                books[j + 1] = tmp; 
             }
-        }        
+        }         
     }
-}
- 
-bubbleSort(books[j]);
+    console.log("-----------------------"); // !Provisoire
+    console.log("Livres triés du plus vieux au plus récent");
+    console.log(books);
+                
 
-console.log(books[j]);
-*/
 
-fonction bubbleSort(array){
-    return array.sort(a,b)=>{return a-b}
-}
-let array = []
-console.log(bubbleSort(array));
-// Classement sorties récentes
-
+// Classement sorties récentes (OK)
+    for (let i = 0; i < books.length; i++) { 
+        for (let j = 0; j < (books.length - i - 1); j++) { //-i-1:pour éviter de reprendre au 1ier
+            if(books[j].releaseDate > books[j + 1].releaseDate) {
+                let tmp = books[j]; 
+                books[j] = books[j+1];
+                books[j + 1] = tmp; 
+            }
+        }         
+    }
+    console.log("-----------------------"); // !Provisoire
+    console.log("Livres sorti du plus vieux au plus récent");
+    console.log(books);
 //Rechercher un titre de livre
 
 //Affichage des prix (croissant/décroissant)>ajouter des filtres
