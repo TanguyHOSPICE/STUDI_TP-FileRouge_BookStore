@@ -1,6 +1,6 @@
 //Créer un livre
 
-/*------------------------- */
+/*------------------------- */ // !Provisoire
 /*1-Créer un livre avec des objets et tblx*/
 /*------------------------- */
 /*(Creation sous forme de variables en attendant de voir les tblx)*/
@@ -13,7 +13,7 @@ let category = "Drame";
 let releaseDate = new Date(1997,05,23);
 let nbSales =345;
 */
-/*------------- */
+/*------------- */ // !Provisoire
 console.log("2-Nous avons créé, ds un fichier books.js,un tbl d'objet");
 /*------------- */
 console.log("BOOK LIST :"); 
