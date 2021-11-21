@@ -14,7 +14,7 @@ let releaseDate = new Date(1997,05,23);
 let nbSales =345;
 */
 /*------------- */
-/* 2-Nous avons créé, ds un fichier books.js,un tbl d'objet*/
+console.log("2-Nous avons créé, ds un fichier books.js,un tbl d'objet");
 /*------------- */
 console.log("BOOK LIST :"); 
 console.log(books);
@@ -22,17 +22,17 @@ console.log(books);
 console.log("-----------------------"); // !Provisoire
 
 //Tbl d'objet pour panier (avec 1 id et la quantité)
-let cart =[
+let card =[
     {id:"0", qtt:1},
     {id:"1", qtt:3},
 ];
-console.log("cart");
-console.log(cart);
+console.log("card");
+console.log(card);
 let totalPrice ; // prix total du panier à stocker ds cette variable
 console.log("-----------------------"); // !Provisoire
 
 /*------------- */
-/* 3-Conditions*/
+console.log("3-Conditions");
 /*------------- */
 
 //Gestion du stock:DISPONIBILITE
@@ -71,7 +71,7 @@ if (card[i]) {//équivaut à card[1 === true]
 }
 
 /*------------- */
-/* 4-Boucles*/
+console.log("4-Boucles");
 /*------------- */
 //Rechercher un titre de livre
 
@@ -124,3 +124,25 @@ for (let i = 0; i < priceOrder.length; i++) {
 console.log("-----------------------"); // !Provisoire
 console.log("Par prix croissant :");
 console.log(priceOrder);
+
+/* ------------------- */
+console.log("5. Fonctions (cours 6)"); 
+/* ------------------- */
+
+// à l'ancienne
+function lastestReleases_old() {}
+// ES6
+const lastestReleases_new = (books) => {};
+
+/* La manière la + courte (pour l'instant) de trier par sorties récentes */
+
+function sortBestSales(a, b) {
+  return a.nbSales - b.nbSales;
+}
+const bestSalesBooks = bestSales.sort(sortBestSales);
+console.log( "-------------------------" );
+bestSalesBooks.reverse();
+
+const lastestReleases = (bestSalesBooks) => {
+  // afficher les sorties récentes sur la page d'accueil
+};
