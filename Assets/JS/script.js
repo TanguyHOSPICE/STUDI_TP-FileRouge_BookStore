@@ -1,8 +1,15 @@
-let library = [...books];
-let library2 = [...books];
+//Création fichier books.js, un array d'objets
+console.log("------- BOOK LIST -------");
+console.log(books);
 
-const sortBestSales = library.sort((a, b) => b.nbSales - a.nbSales);
+let bestSales = [...books];
+let lastReleases = [...books];
+/*Tri pour les meilleures ventes */
+const sortBestSales = bestSales.sort((a, b) => b.nbSales - a.nbSales);
 console.log(sortBestSales);
 
-const sortReleases = library2.sort((a, b) => b.releaseDate - a.releaseDate);
+/*Tri pour les sorties récentes */
+const sortReleases = lastReleases.sort((a, b) => b.releaseDate - a.releaseDate);
 console.log(sortReleases);
+
+// TODO:19m13s
