@@ -1,54 +1,36 @@
 //Création fichier books.js, un array d'objets
-console.log("------- BOOK LIST -------");
+/*
+console.log("------- BOOK LIST -------");//!Provisoire
 console.log(books);
+*/
 
+//*************Insérer les données des livres sur la page d'accueil 
 
-
-/*Insérer les données des livres sur la page d'accueil */
-
-//?-------------Sorties récentes 
+//? Tri pour les sorties récentes 
 let lastReleases = [...books];
-
-/*Tri pour les sorties récentes */
-const sortReleases = lastReleases.sort((a, b) => b.releaseDate - a.releaseDate);
+lastReleases.sort((a, b) => b.releaseDate - a.releaseDate);
 /*console.log("--------lastReleases----------");//!Provisoire
 console.log(lastReleases);*/
 
-//On récupère le container HTML ds le DOM par id
-let lastReleasesHtml =document.getElementById("last-releases");
-/*console.log("-----lastReleasesHtml----");//!Provisoire
-console.log(lastReleasesHtml);*/
-
-//On boucle sur lastReleases trié
-/*for (const element of lastReleases) {
-    console.log("-----element----");//!Provisoire
-    console.log(element);
-    let i =0;
-    if (i<=8) {
-        //instructions
-        i++;
-    }
-}
-*/
-for (let i = 0; i <8; i++) {
-    lastReleasesHtml.innerHTML +=`
-        <article class="book-item">
-            <div class="book-img"></div>
-            <div class="book-title">${lastReleases[i].title}</div>
-            <div class="book-author">${lastReleases[i].author}</div>
-            <div class="book-category">${lastReleases[i].category}</div>
-            <div class="book-price">${lastReleases[i].price}€</div>
-        </article>
-    `;  
-}
-
-
-//?----------- Meilleures ventes
+//? Tri pour les meilleures ventes
 let bestSales = [...books];
+bestSales.sort((a, b) => b.nbSales - a.nbSales);
+/*console.log("--------bestSales----------");//!Provisoire
+console.log(bestSales);*/
 
-/*Tri pour les meilleures ventes */
-const sortBestSales = bestSales.sort((a, b) => b.nbSales - a.nbSales);
-console.log("--------bestSales----------");
-console.log(bestSales);
+//? On récupère les containers HTML ds le DOM par id
+let lastReleasesHtml =document.getElementById("last-releases");
+let bestSalesHtml =document.getElementById("best-sales");
+/*console.log("-----lastReleasesHtml----");//!Provisoire
+console.log(lastReleasesHtml);
+console.log("-----bestSalesHtml----");//!Provisoire
+console.log(bestSalesHtml);*/
 
-//TODO:54m02s
+//? On insère les sorties récentes (Factorisation)
+insertBooksInHtml(lastReleases, lastReleasesHtml);
+
+//? On insère les meilleures ventes 
+insertBooksInHtml(bestSales, bestSalesHtml);
+
+
+
