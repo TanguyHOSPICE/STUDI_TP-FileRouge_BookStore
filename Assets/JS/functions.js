@@ -17,11 +17,12 @@ const insertBooksInHtml= (booksList, htmlContainer)=>{
     for (let i = 0; i <8; i++) {
         htmlContainer.innerHTML +=`
             <article class="book-item">
-                <div class="book-img"></div>
+                <div class="book-img" style="background: url(${booksList[i].cover}) center/cover;"></div>
                 <div class="book-title">${booksList[i].title}</div>
                 <div class="book-author">${booksList[i].author}</div>
                 <div class="book-category">${booksList[i].category}</div>
-                <div class="book-price">${booksList[i].price}€</div>
+                <div class="book-price">${booksList[i].price}<span>€</span></div>
+                <button class="book-cart">Ajouter</button>
             </article>
         `;  
     }
