@@ -102,7 +102,7 @@ header a:hover {
 	height: 150px;
 	max-width: 150px;
 	min-width: 150px;
-	box-shadow: 5px 5px 10px lightgray;
+	/* box-shadow: 5px 5px 10px lightgray; */
 	border-radius: 5px;
 	margin: 0 auto 15px;
 }

@@ -8,9 +8,8 @@ let books = [
     releaseDate: new Date("1862,11,22"),
     nbSales: 395,
     nbStock: 198,    
-    cover:"/Assets/MEDIA/IMG/default.jpg)",
-    //! Faire intégration d'URL correspondant dans cover et d'une default img
-  //TODO: Pb img a DEBUGGER -- 23m09s
+    cover:"Assets/MEDIA/IMG/default.jpg",
+    //TODO: Faire intégration d'URL correspondant dans cover et d'une default img
   },
   {
     id: "1",
@@ -21,7 +20,7 @@ let books = [
     releaseDate: new Date("1996,01,14"),
     nbSales: 365,
     ndStock: 237,
-    cover:"/Assets/MEDIA/IMG/default.jpg)",
+    cover:"/Assets/MEDIA/IMG/default.jpg",
   },
   {
     id: "2",
@@ -32,7 +31,7 @@ let books = [
     releaseDate: new Date("1942,05,29"),
     nbSales: 426,
     ndStock: 156, 
-    cover:"/Assets/MEDIA/IMG/default.jpg)", 
+    cover:"/Assets/MEDIA/IMG/default.jpg", 
   },
   {
     id: "3",
@@ -43,7 +42,7 @@ let books = [
     releaseDate: new Date("1857,04,15"),
     nbSales: 598,
     ndStock: 206, 
-    cover:"/Assets/MEDIA/IMG/default.jpg)", 
+    cover:"/Assets/MEDIA/IMG/default.jpg", 
   },
   {
     id: "4",
@@ -54,7 +53,7 @@ let books = [
     releaseDate: new Date("1943,07,15"),
     nbSales: 523,
     ndStock: 68, 
-    cover:"/Assets/MEDIA/IMG/default.jpg)", 
+    cover:"/Assets/MEDIA/IMG/default.jpg", 
   },
   {
     id: "5",
@@ -65,7 +64,7 @@ let books = [
     releaseDate: new Date("1897,09,20"),
     nbSales: 361,
     ndStock: 109, 
-    cover:"./Assets/MEDIA/IMG/default.jpg)", 
+    cover:"./Assets/MEDIA/IMG/default.jpg", 
   },
   {
     id: "6",
@@ -76,7 +75,7 @@ let books = [
     releaseDate: new Date("1932,12,03"),
     nbSales: 371,
     ndStock: 26,
-    cover:"/Assets/MEDIA/IMG/default.jpg)"
+    cover:"/Assets/MEDIA/IMG/default.jpg"
   },
   {
     id: "7",
@@ -87,7 +86,7 @@ let books = [
     releaseDate: new Date("1885,02,06"),
     nbSales: 230,
     ndStock: 45,
-    cover:"/Assets/MEDIA/IMG/default.jpg)"
+    cover:"/Assets/MEDIA/IMG/default.jpg"
   },
   {
     id: "8",
@@ -98,6 +97,6 @@ let books = [
     releaseDate: new Date("1944,12,03"),
     nbSales: 171,
     ndStock: 84,
-    cover:"/Assets/MEDIA/IMG/default.jpg)"
+    cover:"/Assets/MEDIA/IMG/default.jpg"
   },
 ];
