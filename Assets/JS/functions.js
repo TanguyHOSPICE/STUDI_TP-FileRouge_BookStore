@@ -17,6 +17,7 @@ const insertBooksInHtml= (booksList, htmlContainer)=>{
     for (let i = 0; i <8; i++) {
         htmlContainer.innerHTML +=`
             <article class="book-item">
+            // TODO: intégrer plutot balise img ---30m16s
                 <div class="book-img" style="background: url(${booksList[i].cover}) center/cover;"></div>
                 <div class="book-title">${booksList[i].title}</div>
                 <div class="book-author">${booksList[i].author}</div>
