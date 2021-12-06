@@ -99,12 +99,17 @@ header a:hover {
 }
 
 .book-img {
-	height: 150px;
-	max-width: 150px;
-	min-width: 150px;
 	/* box-shadow: 5px 5px 10px lightgray; */
-	border-radius: 5px;
 	margin: 0 auto 15px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* TODO: ----41m10s */
+.book-img img {
+	max-height: 200px;
+	max-width: 100%;
 }
 
 .book-title {
