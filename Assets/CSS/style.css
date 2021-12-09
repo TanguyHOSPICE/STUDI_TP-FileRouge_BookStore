@@ -116,6 +116,7 @@ header a:hover {
 	font-size: 1rem;
 	font-weight: bold;
 	color: #0b92b0;
+	margin-bottom: 10px;
 }
 
 .book-author {
@@ -124,15 +125,35 @@ header a:hover {
 	font-style: italic;
 }
 
+.book-price {
+	margin: 10px 0 10px;
+	color: #845d36;
+	font-weight: bold;
+}
+
+.book-author {
+	margin-bottom: 10px;
+}
+
+.book-cart {
+	margin-top: 5px;
+	padding: 10px 30px;
+	background-color: #845d36;
+	color: wheat;
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+.book-cart:hover {
+	/* TODO: ---48m32s */
+}
+
 .book-plus {
 	text-align: right;
 	padding: 20px;
 	font-style: italic;
 	cursor: pointer;
-}
-
-.book-cart {
-	margin-top: 5px;
 }
 
 /* ? ******************************** MAIN END **************************************/

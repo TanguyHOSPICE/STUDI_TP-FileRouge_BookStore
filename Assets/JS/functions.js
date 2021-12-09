@@ -20,8 +20,7 @@ const insertBooksInHtml= (booksList, htmlContainer)=>{
                 <div class="book-img"><a href="/"><img src="${booksList[i].cover}" alt="books cover ${booksList[i].title}"></a></div>
                 <div class="book-title">${booksList[i].title}</div>
                 <div class="book-author">${booksList[i].author}</div>
-                <div class="book-category">${booksList[i].category}</div>
-                <div class="book-price">${booksList[i].price}<span>€</span></div>
+                <div class="book-price">Point vert ${booksList[i].price}<span>€</span></div>
                 <button class="book-cart">Ajouter</button>
             </article>
         `;  
