@@ -15,13 +15,19 @@ const insertBooksInHtml= (booksList, htmlContainer)=>{
     }
     */
     for (let i = 0; i <8; i++) {
+        //Est ce que le livre a du stock? 
+        let dispo = booksList[i].nbStock > 0 ? "book-available" : "book-unavailable" //? Ternaire
+
+
+        // On insère le HTML ds le container, avec les données du livre
         htmlContainer.innerHTML +=`
             <article class="book-item">
                 <div class="book-img"><a href="/"><img src="${booksList[i].cover}" alt="books cover ${booksList[i].title}"></a></div>
                 <div class="book-title">${booksList[i].title}</div>
                 <div class="book-author">${booksList[i].author}</div>
-                <div class="book-price">Point vert ${booksList[i].price}<span>€</span></div>
-                <button class="book-cart">Ajouter</button>
+                <div class="book-price"><span class="dispo ${dispo}"></span> ${booksList[i].price}<span>€</span></div>
+                <button class="book-cart  ${dispo}">Ajouter</button>
+                <div class="book-stock  ${dispo}"><a href="/">Etre informé du retour en stock</a></div>
             </article>
         `;  
     }

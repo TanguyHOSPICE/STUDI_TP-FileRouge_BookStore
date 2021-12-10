@@ -71,7 +71,7 @@ header a:hover {
 /************** BOOK LIST ******************/
 .book-list {
 	margin: 0 15% 50px;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.5); /*En option*/
 	padding: 50px 40px;
 }
 
@@ -131,6 +131,21 @@ header a:hover {
 	font-weight: bold;
 }
 
+.book-price .dispo {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 12px;
+}
+
+.book-price .dispo.book-available {
+	background-color: rgb(48, 251, 48);
+}
+
+.book-price .dispo.book-unavailable {
+	background-color: rgb(251, 48, 48);
+}
+
 .book-author {
 	margin-bottom: 10px;
 }
@@ -139,14 +154,19 @@ header a:hover {
 	margin-top: 5px;
 	padding: 10px 30px;
 	background-color: #845d36;
-	color: wheat;
+	color: #fff;
 	border: none;
 	border-radius: 7px;
 	cursor: pointer;
 }
 
-.book-cart:hover {
-	/* TODO: ---48m32s */
+.book-cart.book-unavailable,
+.book-stock.book-available {
+	display: none; /*? Afin de faire disparaitre le btn et faire apparaitre le petit txt */
+}
+
+.book-stock a {
+	color: #845d36;
 }
 
 .book-plus {

@@ -7,9 +7,9 @@ let books = [
     category: "Drame",
     releaseDate: new Date("1862,11,22"),
     nbSales: 395,
-    nbStock: 198,    
+    nbStock: 0,    
     cover:"Assets/MEDIA/IMG/default.jpg",
-    //TODO: Faire intégration d'URL correspondant dans cover et d'une default img
+    //TODO: Faire intégration d'URL corresponbant dans cover
   },
   {
     id: "1",
@@ -19,7 +19,7 @@ let books = [
     category: "Drame",
     releaseDate: new Date("1996,01,14"),
     nbSales: 365,
-    ndStock: 237,
+    nbStock: 237,
     cover:"/Assets/MEDIA/IMG/default.jpg",
   },
   {
@@ -30,7 +30,7 @@ let books = [
     category: "Roman",
     releaseDate: new Date("1942,05,29"),
     nbSales: 426,
-    ndStock: 156, 
+    nbStock: 156, 
     cover:"/Assets/MEDIA/IMG/default.jpg", 
   },
   {
@@ -41,7 +41,7 @@ let books = [
     category: "Poésie",
     releaseDate: new Date("1857,04,15"),
     nbSales: 598,
-    ndStock: 206, 
+    nbStock: 0, 
     cover:"/Assets/MEDIA/IMG/default.jpg", 
   },
   {
@@ -52,29 +52,29 @@ let books = [
     category: "Roman",
     releaseDate: new Date("1943,07,15"),
     nbSales: 523,
-    ndStock: 68, 
+    nbStock: 0, 
     cover:"/Assets/MEDIA/IMG/default.jpg", 
   },
   {
     id: "5",
     title: "Cyrano de Bergerac",
-    author: "Edmond Rostand",
+    author: "Edmonb Rostanb",
     price: 22.5,
     category: "Théâtre",
     releaseDate: new Date("1897,09,20"),
     nbSales: 361,
-    ndStock: 109, 
+    nbStock: 109, 
     cover:"./Assets/MEDIA/IMG/default.jpg", 
   },
   {
     id: "6",
     title: "Voyage au bout de la nuit",
-    author: "Louis-Ferdinand Céline",
+    author: "Louis-Ferdinanb Céline",
     price: 15.7,
     category: "Roman",
     releaseDate: new Date("1932,12,03"),
     nbSales: 371,
-    ndStock: 26,
+    nbStock: 26,
     cover:"/Assets/MEDIA/IMG/default.jpg"
   },
   {
@@ -85,7 +85,7 @@ let books = [
     category: "Roman",
     releaseDate: new Date("1885,02,06"),
     nbSales: 230,
-    ndStock: 45,
+    nbStock: 45,
     cover:"/Assets/MEDIA/IMG/default.jpg"
   },
   {
@@ -96,7 +96,7 @@ let books = [
     category: "Roman",
     releaseDate: new Date("1944,12,03"),
     nbSales: 171,
-    ndStock: 84,
+    nbStock: 84,
     cover:"/Assets/MEDIA/IMG/default.jpg"
   },
 ];
