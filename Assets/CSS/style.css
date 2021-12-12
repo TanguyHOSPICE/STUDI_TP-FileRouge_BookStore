@@ -8,6 +8,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
 	text-decoration: none;
+	font-size: 16px;
 }
 
 body {
@@ -190,10 +191,13 @@ section.book-spotlight {
 	padding: 50px;
 	background-color: red; /*! provisoire*/
 	display: flex;
-	align-items: center;
 }
 
 .book-spotlight-right {
 	margin-left: 50px;
+}
+
+.book-spotlight-right-title {
+	/* TODO:video 10 ---25m03s */
 }
 /* ? ************** ARTICLE PAGE END *********************/
