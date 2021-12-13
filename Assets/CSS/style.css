@@ -8,10 +8,10 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
 	text-decoration: none;
-	font-size: 16px;
 }
 
 body {
+	font-size: 16px; /* Placé ici permet de ne pas impacter tous les <a> contrairement à ds " * " */
 	background-color: #fce5dc;
 }
 
@@ -84,7 +84,7 @@ header a:hover {
 }
 
 .book-list-title {
-	font-size: 25px;
+	font-size: 1.6rem;
 	font-weight: bold;
 	color: rgb(163, 139, 117);
 }
@@ -121,7 +121,7 @@ header a:hover {
 }
 
 .book-title {
-	font-size: 1rem;
+	font-size: 1.125rem;
 	font-weight: bold;
 	color: #0b92b0;
 	margin-bottom: 10px;
@@ -137,6 +137,7 @@ header a:hover {
 	margin: 10px 0 10px;
 	color: #845d36;
 	font-weight: bold;
+	font-size: 1.125rem;
 }
 
 .book-price .dispo {
@@ -194,10 +195,26 @@ section.book-spotlight {
 }
 
 .book-spotlight-right {
-	margin-left: 50px;
+	margin: 50px 0 0 50px;
 }
 
 .book-spotlight-right-title {
-	/* TODO:video 10 ---25m03s */
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.book-spotlight-right-author {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+
+.book-spotlight-right-note {
+	margin-bottom: 20px;
+}
+
+.book-spotlight-right-note img {
+	width: 20px;
+	/* TODO video 10 ---42m08s */
 }
 /* ? ************** ARTICLE PAGE END *********************/

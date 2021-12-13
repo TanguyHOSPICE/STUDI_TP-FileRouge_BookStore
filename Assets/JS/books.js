@@ -8,7 +8,7 @@ let books = [
     releaseDate: new Date("1862,11,22"),
     nbSales: 395,
     nbStock: 0,    
-    cover:"Assets/MEDIA/IMG/default.jpg",
+    cover:"Assets/MEDIA/IMG/les-miserables.jpeg",
     //TODO: Faire intégration d'URL corresponbant dans cover
   },
   {
