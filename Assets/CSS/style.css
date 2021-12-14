@@ -215,6 +215,21 @@ section.book-spotlight {
 
 .book-spotlight-right-note img {
 	width: 20px;
+	margin-right: 4px;
 	/* TODO video 10 ---42m08s */
 }
+
+.book-spotlight-right-desc {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+.book-spotlight-right-desc-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
 /* ? ************** ARTICLE PAGE END *********************/
