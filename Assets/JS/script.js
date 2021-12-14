@@ -4,7 +4,7 @@ console.log("------- BOOK LIST -------");//!Provisoire
 console.log(books);
 */
 
-//*************Insérer les données des livres sur la page d'accueil 
+//************* 1-Insérer les données des livres sur la page d'accueil 
 
 //? Tri pour les sorties récentes 
 let lastReleases = [...books];
@@ -32,5 +32,18 @@ insertBooksInHtml(lastReleases, lastReleasesHtml);
 //? On insère les meilleures ventes 
 insertBooksInHtml(bestSales, bestSalesHtml);
 
+//************* 2-Afficher la page article au clic d'un livre
+
+// On récupère les titres de la page acceuil
+const bookTitles = document.getElementsByClassName('home-book-title');
+
+// Pour chaque titre de livre, on associe un évènement au clic
+for (const bookTitle of bookTitles) {
+    // On récupère l'Id du livre à travers data-bookId
+    let bookId = bookTitle.dataset.bookId;
+    bookTitle.addEventListener('click', bookIdInUrl(bookId));
+}
+
+// TODO video10 --- 1h42m50s
 
 

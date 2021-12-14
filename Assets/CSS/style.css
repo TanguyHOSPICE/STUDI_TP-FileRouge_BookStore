@@ -106,7 +106,7 @@ header a:hover {
 	text-align: center;
 }
 
-.book-img {
+.home-book-img {
 	/* box-shadow: 5px 5px 10px lightgray; */
 	margin: 0 auto 15px;
 	height: 200px;
@@ -115,51 +115,51 @@ header a:hover {
 	align-items: center;
 }
 
-.book-img img {
+.home-book-img img {
 	max-height: 200px;
 	max-width: 100%;
 }
 
-.book-title {
+.home-book-title {
 	font-size: 1.125rem;
 	font-weight: bold;
 	color: #0b92b0;
 	margin-bottom: 10px;
 }
 
-.book-author {
+.home-book-author {
 	font-size: 1.125rem;
 	color: #515151;
 	font-style: italic;
 }
 
-.book-price {
+.home-book-price {
 	margin: 10px 0 10px;
 	color: #845d36;
 	font-weight: bold;
 	font-size: 1.125rem;
 }
 
-.book-price .dispo {
+.home-book-price .dispo {
 	display: inline-block;
 	width: 12px;
 	height: 12px;
 	border-radius: 12px;
 }
 
-.book-price .dispo.book-available {
+.home-book-price .dispo.book-available {
 	background-color: rgb(48, 251, 48);
 }
 
-.book-price .dispo.book-unavailable {
+.home-book-price .dispo.book-unavailable {
 	background-color: rgb(251, 48, 48);
 }
 
-.book-author {
+.home-book-author {
 	margin-bottom: 10px;
 }
 
-.book-cart {
+.home-book-cart {
 	margin-top: 5px;
 	padding: 10px 30px;
 	background-color: #845d36;
@@ -169,12 +169,12 @@ header a:hover {
 	cursor: pointer;
 }
 
-.book-cart.book-unavailable,
-.book-stock.book-available {
+.home-book-cart.book-unavailable,
+.home-book-stock.book-available {
 	display: none; /*? Afin de faire disparaitre le btn et faire apparaitre le petit txt */
 }
 
-.book-stock a {
+.home-book-stock a {
 	color: #845d36;
 }
 
@@ -216,7 +216,6 @@ section.book-spotlight {
 .book-spotlight-right-note img {
 	width: 20px;
 	margin-right: 4px;
-	/* TODO video 10 ---42m08s */
 }
 
 .book-spotlight-right-desc {
