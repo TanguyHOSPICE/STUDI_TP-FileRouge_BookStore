@@ -44,6 +44,6 @@ for (const bookTitle of bookTitles) {
     bookTitle.addEventListener('click', bookIdInUrl(bookId));
 }
 
-// TODO video10 --- 1h42m50s
+// TODO video10 --- 1h45m36s
 
 
