@@ -41,9 +41,13 @@ const bookTitles = document.getElementsByClassName('home-book-title');
 for (const bookTitle of bookTitles) {
     // On récupère l'Id du livre à travers data-bookId
     let bookId = bookTitle.dataset.bookId;
-    bookTitle.addEventListener('click', bookIdInUrl(bookId));
+    /*bookTitle.addEventListener('click', bookIdInUrl(bookId));*/
+
+    bookTitle.addEventListener('click', (bookId) =>{
+        window.location.href="./article.html?bookId="+bookId;
+
+    });
 }
 
-// TODO video10 --- 1h45m36s
 
 
