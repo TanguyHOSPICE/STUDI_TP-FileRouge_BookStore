@@ -159,7 +159,7 @@ header a:hover {
 	margin-bottom: 10px;
 }
 
-.home-book-cart {
+.book-add-cart {
 	margin-top: 5px;
 	padding: 10px 30px;
 	background-color: #845d36;
@@ -169,7 +169,7 @@ header a:hover {
 	cursor: pointer;
 }
 
-.home-book-cart.book-unavailable,
+.book-add-cart.book-unavailable,
 .home-book-stock.book-available {
 	display: none; /*? Afin de faire disparaitre le btn et faire apparaitre le petit txt */
 }
@@ -194,6 +194,10 @@ section.book-spotlight {
 	display: flex;
 }
 
+.book-spotlight-left img {
+	width: 400px;
+	/* TODO vid 11 --- 25m16s --- BUG info livre page index et vérif CSS page article */
+}
 .book-spotlight-right {
 	margin: 50px 0 0 50px;
 }

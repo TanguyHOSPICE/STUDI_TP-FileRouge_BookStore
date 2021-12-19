@@ -1,6 +1,6 @@
 
 //Creation fonction pour factoriser
-const insertBooksInHtml= (booksList, htmlContainer)=>{
+const insertBooksInHomePage= (booksList, htmlContainer)=>{
     
     //********On boucle sur lastReleases trié
     
@@ -26,7 +26,7 @@ const insertBooksInHtml= (booksList, htmlContainer)=>{
                 <div class="home-book-title" data-bookId="${booksList[i].id}">${booksList[i].title}</div>
                 <div class="home-book-author">${booksList[i].author}</div>
                 <div class="home-book-price"><span class="dispo ${dispo}"></span> ${booksList[i].price}<span>€</span></div>
-                <button class="home-book-cart  ${dispo}">Ajouter</button>
+                <button class="book-add-cart  ${dispo}">Ajouter</button>
                 <div class="home-book-stock  ${dispo}"><a href="/">Etre informé du retour en stock</a></div>
             </article>
         `;  
@@ -42,6 +42,35 @@ const bookIdInUrl = (bookId ,page) =>{
 
 // Insérer les livres sur la page article HTML
 
-const insertBooksInArticlePage = (booksList, htmlContainer) => {
+const insertBooksInfosInArticlePage = (bookInfo, htmlContainer) => {
+    // On insère le HTML ds le container, avec les données du livre
+    htmlContainer.innerHTML +=`
     
+    <div class="book-spotlight-left">
+        <img src="${bookInfos[i].cover}" alt="book cover ${bookInfos[i].title}"> 
+    </div>
+
+<div class="book-spotlight-right">
+    <div class="book-spotlight-right-title">${bookInfos[i].title}</div>
+    <div class="book-spotlight-right-author">De <a href="/">${bookInfos[i].author}</a> - ${bookInfos[i].category}</div>
+    //TODO A changer mode insertion étoiles
+    <div class="book-spotlight-right-note">Note: <img src="/Assets/MEDIA/IMG/etoile.png"
+            alt="Stars notation"></div>
+    <div class="book-spotlight-right-desc">
+    //TODO A changer mode insertion descriptions
+        <div class="book-spotlight-right-desc-title">Description</div>
+        En 1815, Jean Valjean est libéré du bagne de Toulon après y avoir purgé une peine de dix-neuf ans :
+        victime d'un destin tragique, initialement condamné à cinq ans de bagne pour avoir volé un pain afin
+        de nourrir sa famille, il voit sa peine prolongée à la suite de plusieurs tentatives d'évasion.
+    </div>
+
+    <div class="book-spotlight-right-btn">
+        <button class="book-add-cart">Ajouter au panier</button>
+    </div>
+
+    // TODO:For function article page
+    <!-- <div class="book-spotlight-right-note">Note: <img src="${bookInfos[i].note}" alt="Stars notation"></div>
+    <div class="book-spotlight-right-price"><span class="dispo ${dispo}"></span> ${bookInfos[i].price}<span>€</span></div>
+</div> -->
+`; 
 }
