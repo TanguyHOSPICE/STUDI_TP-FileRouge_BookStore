@@ -35,6 +35,13 @@ const insertBooksInHtml= (booksList, htmlContainer)=>{
 }
 
 // Fait passer les infos d'un livre ds URL
-const bookIdInUrl = (bookId) =>{
-    console.log(bookId);
+
+const bookIdInUrl = (bookId ,page) =>{
+    window.location.href="./"+page+".html?bookId="+bookId;
+}
+
+// Insérer les livres sur la page article HTML
+
+const insertBooksInArticlePage = (booksList, htmlContainer) => {
+    
 }
