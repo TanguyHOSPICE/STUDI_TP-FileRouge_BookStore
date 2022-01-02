@@ -27,10 +27,10 @@ console.log("-----bestSalesHtml----");//!Provisoire
 console.log(bestSalesHtml);*/
 
 //? On insère les sorties récentes (Factorisation)
-insertBooksInHtml(lastReleases, lastReleasesHtml);
+insertBooksInHomePage(lastReleases, lastReleasesHtml);
 
 //? On insère les meilleures ventes 
-insertBooksInHtml(bestSales, bestSalesHtml);
+insertBooksInHomePage(bestSales, bestSalesHtml);
 
 //************* 2-Afficher la page article au clic d'un livre
 

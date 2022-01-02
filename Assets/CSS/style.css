@@ -95,6 +95,7 @@ header a:hover {
 	flex-wrap: wrap;
 	margin-top: 20px;
 	padding: 15px;
+	background-color: red; /*! provisoire*/
 }
 
 .book-item {
@@ -102,7 +103,7 @@ header a:hover {
 	width: 22%;
 	background-color: rgba(241, 230, 221, 0.623);
 	padding: 40px;
-	border-radius: 20px;
+	border-radius: 8px;
 	text-align: center;
 }
 
