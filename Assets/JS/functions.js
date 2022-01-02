@@ -44,15 +44,14 @@ const bookIdInUrl = (bookId ,page) =>{
 
 const insertBooksInfosInArticlePage = (bookInfo, htmlContainer) => {
     // On insère le HTML ds le container, avec les données du livre
-    htmlContainer.innerHTML +=`
-    
+    htmlContainer.innerHTML +=`    
     <div class="book-spotlight-left">
-        <img src="${bookInfos[i].cover}" alt="book cover ${bookInfos[i].title}"> 
+        <img src="${bookInfo.cover}" alt="book cover ${bookInfo.title}"> 
     </div>
 
 <div class="book-spotlight-right">
-    <div class="book-spotlight-right-title">${bookInfos[i].title}</div>
-    <div class="book-spotlight-right-author">De <a href="/">${bookInfos[i].author}</a> - ${bookInfos[i].category}</div>
+    <div class="book-spotlight-right-title">${bookInfo.title}</div>
+    <div class="book-spotlight-right-author">De <a href="/">${bookInfo.author}</a> - ${bookInfo.category}</div>
     //TODO A changer mode insertion étoiles
     <div class="book-spotlight-right-note">Note: <img src="/Assets/MEDIA/IMG/etoile.png"
             alt="Stars notation"></div>
@@ -69,8 +68,8 @@ const insertBooksInfosInArticlePage = (bookInfo, htmlContainer) => {
     </div>
 
     // TODO:For function article page
-    <!-- <div class="book-spotlight-right-note">Note: <img src="${bookInfos[i].note}" alt="Stars notation"></div>
-    <div class="book-spotlight-right-price"><span class="dispo ${dispo}"></span> ${bookInfos[i].price}<span>€</span></div>
+    <!-- <div class="book-spotlight-right-note">Note: <img src="${bookInfo.note}" alt="Stars notation"></div>
+    <div class="book-spotlight-right-price"><span class="dispo ${dispo}"></span> ${bookInfo.price}<span>€</span></div>
 </div> -->
 `; 
 }

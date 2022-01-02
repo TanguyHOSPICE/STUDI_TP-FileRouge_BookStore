@@ -41,7 +41,7 @@ const bookTitles = document.getElementsByClassName('home-book-title');
 for (const bookTitle of bookTitles) {
     // On récupère l'Id du livre à travers data-bookId
     let bookId = bookTitle.dataset.bookId;
-    let page = "article"
+    let page = "article";
     bookTitle.addEventListener('click', () =>{
         // On appelle la fonction (dans function.js) qui créé l'URL à partir de l'id;
         bookIdInUrl(bookId, page);
