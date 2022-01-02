@@ -37,14 +37,14 @@ const insertBooksInHomePage= (booksList, htmlContainer)=>{
 // Fait passer les infos d'un livre ds URL
 
 const bookIdInUrl = (bookId ,page) =>{
-    window.location.href="./"+page+".html?bookId="+bookId;
+    window.location.href="./"+page+".html?bookid="+bookId;
 }
 
 // Insérer les livres sur la page article HTML
 
 const insertBooksInfosInArticlePage = (bookInfo, htmlContainer) => {
     // On insère le HTML ds le container, avec les données du livre
-    htmlContainer.innerHTML +=`    
+    htmlContainer.innerHTML+=`    
     <div class="book-spotlight-left">
         <img src="${bookInfo.cover}" alt="book cover ${bookInfo.title}"> 
     </div>
@@ -52,11 +52,10 @@ const insertBooksInfosInArticlePage = (bookInfo, htmlContainer) => {
 <div class="book-spotlight-right">
     <div class="book-spotlight-right-title">${bookInfo.title}</div>
     <div class="book-spotlight-right-author">De <a href="/">${bookInfo.author}</a> - ${bookInfo.category}</div>
-    //TODO A changer mode insertion étoiles
-    <div class="book-spotlight-right-note">Note: <img src="/Assets/MEDIA/IMG/etoile.png"
+    <!--TODO A changer mode insertion étoiles--><div class="book-spotlight-right-note">Note: <img src="/Assets/MEDIA/IMG/etoile.png"
             alt="Stars notation"></div>
     <div class="book-spotlight-right-desc">
-    //TODO A changer mode insertion descriptions
+    <!--TODO A changer mode insertion descriptions-->
         <div class="book-spotlight-right-desc-title">Description</div>
         En 1815, Jean Valjean est libéré du bagne de Toulon après y avoir purgé une peine de dix-neuf ans :
         victime d'un destin tragique, initialement condamné à cinq ans de bagne pour avoir volé un pain afin
@@ -66,10 +65,10 @@ const insertBooksInfosInArticlePage = (bookInfo, htmlContainer) => {
     <div class="book-spotlight-right-btn">
         <button class="book-add-cart">Ajouter au panier</button>
     </div>
-
-    // TODO:For function article page
-    <!-- <div class="book-spotlight-right-note">Note: <img src="${bookInfo.note}" alt="Stars notation"></div>
-    <div class="book-spotlight-right-price"><span class="dispo ${dispo}"></span> ${bookInfo.price}<span>€</span></div>
-</div> -->
-`; 
+    `; 
 }
+
+// TODO:For function article page
+// <!-- <div class="book-spotlight-right-note">Note: <img src="${bookInfo.note}" alt="Stars notation"></div>
+// <div class="book-spotlight-right-price"><span class="dispo ${dispo}"></span> ${bookInfo.price}<span>€</span></div>
+// </div> -->

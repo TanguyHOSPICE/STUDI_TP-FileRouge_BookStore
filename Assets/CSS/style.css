@@ -95,7 +95,6 @@ header a:hover {
 	flex-wrap: wrap;
 	margin-top: 20px;
 	padding: 15px;
-	background-color: red; /*! provisoire*/
 }
 
 .book-item {
@@ -197,7 +196,7 @@ section.book-spotlight {
 
 .book-spotlight-left img {
 	width: 400px;
-	/* TODO vid 11 --- 25m16s --- BUG info livre page index et vérif CSS page article */
+	/* TODO vid 11 --- 25m16s */
 }
 .book-spotlight-right {
 	margin: 50px 0 0 50px;

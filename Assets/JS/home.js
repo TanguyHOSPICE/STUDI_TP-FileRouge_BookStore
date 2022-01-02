@@ -40,7 +40,7 @@ const bookTitles = document.getElementsByClassName('home-book-title');
 // Pour chaque titre de livre, on associe un évènement au clic
 for (const bookTitle of bookTitles) {
     // On récupère l'Id du livre à travers data-bookId
-    let bookId = bookTitle.dataset.bookId;
+    let bookId = bookTitle.dataset.bookid;
     let page = "article";
     bookTitle.addEventListener('click', () =>{
         // On appelle la fonction (dans function.js) qui créé l'URL à partir de l'id;
