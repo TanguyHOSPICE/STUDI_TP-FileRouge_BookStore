@@ -35,10 +35,10 @@ insertBooksInHomePage(bestSales, bestSalesHtml);
 //************* 2-Afficher la page article au clic d'un livre
 
 // On récupère les titres de la page acceuil
-const bookTitles = document.getElementsByClassName('home-book-title');
+const cartBtns = document.getElementsByClassName('home-book-title');
 
 // Pour chaque titre de livre, on associe un évènement au clic
-for (const bookTitle of bookTitles) {
+for (const bookTitle of cartBtns) {
     // On récupère l'Id du livre à travers data-bookId
     let bookId = bookTitle.dataset.bookid;
     let page = "article";
@@ -48,5 +48,36 @@ for (const bookTitle of bookTitles) {
     });
 }
 
+//************* 3-Créer un tbl d'objets panier
 
+//Ajout au panier au clic du btn "Ajouter au panier"
+let cart = [];
 
+// On récupère les btn "Ajouter au panier" de la page d'acceuil
+const cartBtns = document.getElementsByClassName('book-add-cart');
+
+for (const cartBtn of cartBtns) {
+    // On récupère l'Id du livre à travers data-bookId
+    let bookId = cartBtn.dataset.bookid;
+    cartBtns.addEventListener('click', () =>{
+        // creation bookAdded pour ne pas répéter notre livre si déjà ds cart
+        let bookAdded = false;
+        for (cartItem in cart) {
+            if (cartItem.id === bookId) {
+                cartItem.qtt++;
+                bookAdded = true;
+                break;
+            }
+        }
+        if (!bookAdded) { // correspond à bookAdded === false
+            cart.push({
+                id: bookId,
+                qtt: 1,
+            });
+        }
+        //! Provisoire 
+        console.log("-----Cart:----");
+        console.log(cart);
+        // todo vid--11--Bug home page--1h00m46s
+    });
+}

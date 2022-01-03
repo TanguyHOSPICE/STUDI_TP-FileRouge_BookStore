@@ -23,10 +23,10 @@ const insertBooksInHomePage= (booksList, htmlContainer)=>{
         htmlContainer.innerHTML +=`
             <article class="book-item">
                 <div class="home-book-img"><a href="/"><img src="${booksList[i].cover}" alt="book cover ${booksList[i].title}"></a></div>
-                <div class="home-book-title" data-bookId="${booksList[i].id}">${booksList[i].title}</div>
+                <div class="home-book-title" data-bookid="${booksList[i].id}">${booksList[i].title}</div>
                 <div class="home-book-author">${booksList[i].author}</div>
                 <div class="home-book-price"><span class="dispo ${dispo}"></span> ${booksList[i].price}<span>€</span></div>
-                <button class="book-add-cart  ${dispo}">Ajouter</button>
+                <button class="book-add-cart  ${dispo}" data-bookid="${booksList[i].id}">Ajouter</button>
                 <div class="home-book-stock  ${dispo}"><a href="/">Etre informé du retour en stock</a></div>
             </article>
         `;  

@@ -9,8 +9,8 @@ let currentBook = {};
 for (book of books) {
     if (book.id === bookIdUrl) {
         //? Provisoire 1
-        console.log("**********book.id:**********");
-        console.log(book.id); 
+        // console.log("**********book.id:**********");
+        // console.log(book.id); 
         currentBook = book;
         //! On risque de boucler sur trop de livres si il y a bcp de livre d'ou le break
         break;

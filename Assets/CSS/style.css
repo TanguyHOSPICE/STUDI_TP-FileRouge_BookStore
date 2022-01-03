@@ -190,13 +190,11 @@ header a:hover {
 /************** book-spotlight ******************/
 section.book-spotlight {
 	padding: 50px;
-	background-color: red; /*! provisoire*/
 	display: flex;
 }
 
 .book-spotlight-left img {
 	width: 400px;
-	/* TODO vid 11 --- 25m16s */
 }
 .book-spotlight-right {
 	margin: 50px 0 0 50px;
