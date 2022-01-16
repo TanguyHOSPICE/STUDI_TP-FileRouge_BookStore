@@ -11,6 +11,7 @@ let books = [
     cover:"Assets/MEDIA/IMG/les-miserables.jpeg",
     //TODO: Faire intégration d'URL corresponbant dans cover
     note: 5,
+    synopsis:"En 1815, Jean Valjean est libéré du bagne de Toulon après y avoir purgé une peine de dix-neuf ans : victime d'un destin tragique, initialement condamné à cinq ans de bagne pour avoir volé un pain afin de nourrir sa famille, il voit sa peine prolongée à la suite de plusieurs tentatives d'évasion."
   },
   {
     id: "1",
@@ -21,8 +22,9 @@ let books = [
     releaseDate: new Date("1996,01,14"),
     nbSales: 365,
     nbStock: 237,
-    cover:"/Assets/MEDIA/IMG/default.jpg",
+    cover:"https://upload.wikimedia.org/wikipedia/commons/b/bd/PL_Podziemny_krag_okladka.jpg",
     note: 4,
+    synopsis:"Le « Fight Club » est un club de combat clandestin où des jeunes se battent pour évacuer leur malaise. Le « Fight Club » permet de s'extirper de son quotidien monotone et de revendiquer sa propre existence, en cessant d'être docile et en ressentant la douleur des coups sans avoir peur.",
   },
   {
     id: "2",
@@ -33,8 +35,9 @@ let books = [
     releaseDate: new Date("1942,05,29"),
     nbSales: 426,
     nbStock: 156, 
-    cover:"/Assets/MEDIA/IMG/default.jpg",
-    note: 3, 
+    cover:"https://www.superprof.fr/ressources/wp-content/uploads/2019/05/bd-camus-etranger-540x700.jpg",
+    note: 3,
+    synopsis:"Publié en 1942, l'Etranger retrace l'histoire d'un homme ordinaire soumis à l'absurdité de l'existence et de la condition. Rédigé au passé, ce récit propose de suivre le parcours de Meursault, de l'annonce du décès de sa mère jusqu'à sa condamnation pour homicide, un an plus tard.", 
   },
   {
     id: "3",
@@ -45,8 +48,9 @@ let books = [
     releaseDate: new Date("1857,04,15"),
     nbSales: 598,
     nbStock: 0, 
-    cover:"/Assets/MEDIA/IMG/default.jpg",
-    note: 4, 
+    cover:"https://static.fnac-static.com/multimedia/Images/FR/NR/94/66/28/2647700/1540-1/tsp20201108072657/Les-Fleurs-du-mal.jpg",
+    note: 4,
+    synopsis:"Les six sections des Fleurs du Mal retracent l'itinéraire de Baudelaire, le cheminement de son âme qui vit une véritable descente aux enfers. Dès le premier poème de l'œuvre, « Au lecteur », Baudelaire explique que le monde est un enfer. ... Baudelaire met en avant le sentiment de solitude dans la grande ville.", 
   },
   {
     id: "4",
@@ -57,8 +61,9 @@ let books = [
     releaseDate: new Date("1943,07,15"),
     nbSales: 523,
     nbStock: 0, 
-    cover:"/Assets/MEDIA/IMG/default.jpg",
-    note: 2, 
+    cover:"https://images-na.ssl-images-amazon.com/images/I/41zmScEUDML._SX210_.jpg",
+    note: 2,
+    synopsis:"Un aviateur, le narrateur du conte, se bloque avec son avion au milieu du désert du Sahara à la suite d'une panne de moteur. ... Chaque jour l'aviateur apprend de nouvelles choses sur le petit prince, sur ses sentiments, ses peurs, ses doutes, son départ, son voyage et sur sa planète.", 
   },
   {
     id: "5",
@@ -69,8 +74,9 @@ let books = [
     releaseDate: new Date("1897,09,20"),
     nbSales: 361,
     nbStock: 109, 
-    cover:"./Assets/MEDIA/IMG/default.jpg",
-    note: 3, 
+    cover:"https://commentairecompose.fr/wp-content/uploads/2014/08/cyrano-de-bergerac-resume.jpg",
+    note: 3,
+    synopsis:"Cyrano est un mousquetaire intrépide, appartenant à la compagnie des Cadets de Gascogne. Il est amoureux de sa cousine Roxane mais n'ose pas se déclarer... Par amour pour elle, désespéré, il accepte de protéger son rival Christian et va même jusqu'à l'aider à séduire Roxane. ...", 
   },
   {
     id: "6",
@@ -81,8 +87,9 @@ let books = [
     releaseDate: new Date("1932,12,03"),
     nbSales: 371,
     nbStock: 26,
-    cover:"/Assets/MEDIA/IMG/default.jpg",
+    cover:"https://www.babelio.com/couv/CVT_Voyage-au-bout-de-la-nuit_1819.jpeg",
     note: 1,
+    synopsis:"Bardamu s'engage dans l'armée par hasard et découvre l'horreur de la première guerre mondiale, mais se lie d'amitié avec Robinson, son frère d'arme. Blessé, puis réformé, il fréquente quelques femmes de basse condition (Lola, Musyne) puis quitte la France pour l'Afrique.",
   },
   {
     id: "7",
@@ -93,8 +100,9 @@ let books = [
     releaseDate: new Date("1885,02,06"),
     nbSales: 230,
     nbStock: 45,
-    cover:"/Assets/MEDIA/IMG/default.jpg",
+    cover:"https://www.babelio.com/couv/bm_CVT_Bel-Ami_5950.jpg",
     note: 4,
+    synopsis:"Georges Duroy est un ancien sous-officier du 6e régiment des hussards ayant passé des années en Algérie, qui travaille dans les bureaux de la Compagnie des chemins de fer du Nord, à Paris. Très dépensier, il peine à joindre les deux bouts, mais retrouve par hasard un ancien camarade de régiment, Charles Forestier.",
   },
   {
     id: "8",
@@ -105,7 +113,8 @@ let books = [
     releaseDate: new Date("1944,12,03"),
     nbSales: 171,
     nbStock: 84,
-    cover:"/Assets/MEDIA/IMG/default.jpg",
+    cover:"https://images-na.ssl-images-amazon.com/images/I/413IUNd1utL._SX210_.jpg",
     note: 3,
+    synopsis:"Antigone est la fille d'Œdipe et de Jocaste (mère et épouse d'Œdipe), souverains de Thèbes. ... Créon est obligé d'appliquer la sentence de mort à Antigone. Après un long débat avec son oncle sur le but de l'existence, celle-ci est condamnée à être enterrée vivante.",
   },
 ];
