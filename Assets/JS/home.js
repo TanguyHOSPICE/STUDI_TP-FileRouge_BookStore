@@ -62,7 +62,11 @@ for (const cartBtn of cartBtns) {
     cartBtn.addEventListener('click', () =>{
         // creation bookAdded pour ne pas répéter notre livre si déjà ds cart
         let bookAdded = false;
-        for (cartItem in cart) {
+        for (cartItem of cart) {
+            //! Provisoire
+            // console.log("--------Cart item/bookId------");
+            // console.log('CartItem:', cartItem.id);
+            // console.log('bookId:', bookId);
             if (cartItem.id === bookId) {
                 cartItem.qtt++;
                 bookAdded = true;
@@ -76,8 +80,8 @@ for (const cartBtn of cartBtns) {
             });
         }
         //! Provisoire 
-        console.log("-----Cart:----");
-        console.log(cart);
-        // todo vid--11--Bug home page--1h00m46s
+        // console.log("-----Cart:----");
+        // console.log('Cart:', cart);
+        
     });
 }
