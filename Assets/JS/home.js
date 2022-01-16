@@ -35,10 +35,10 @@ insertBooksInHomePage(bestSales, bestSalesHtml);
 //************* 2-Afficher la page article au clic d'un livre
 
 // On récupère les titres de la page acceuil
-const cartBtns = document.getElementsByClassName('home-book-title');
+const bookTitles = document.getElementsByClassName('home-book-title');
 
 // Pour chaque titre de livre, on associe un évènement au clic
-for (const bookTitle of cartBtns) {
+for (const bookTitle of bookTitles) {
     // On récupère l'Id du livre à travers data-bookId
     let bookId = bookTitle.dataset.bookid;
     let page = "article";
@@ -59,7 +59,7 @@ const cartBtns = document.getElementsByClassName('book-add-cart');
 for (const cartBtn of cartBtns) {
     // On récupère l'Id du livre à travers data-bookId
     let bookId = cartBtn.dataset.bookid;
-    cartBtns.addEventListener('click', () =>{
+    cartBtn.addEventListener('click', () =>{
         // creation bookAdded pour ne pas répéter notre livre si déjà ds cart
         let bookAdded = false;
         for (cartItem in cart) {

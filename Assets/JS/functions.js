@@ -57,9 +57,7 @@ const insertBooksInfosInArticlePage = (bookInfo, htmlContainer) => {
     <div class="book-spotlight-right-desc">
     <!--TODO A changer mode insertion descriptions-->
         <div class="book-spotlight-right-desc-title">Description</div>
-        En 1815, Jean Valjean est libéré du bagne de Toulon après y avoir purgé une peine de dix-neuf ans :
-        victime d'un destin tragique, initialement condamné à cinq ans de bagne pour avoir volé un pain afin
-        de nourrir sa famille, il voit sa peine prolongée à la suite de plusieurs tentatives d'évasion.
+        ${bookInfo.synopsis}
     </div>
 
     <div class="book-spotlight-right-btn">
