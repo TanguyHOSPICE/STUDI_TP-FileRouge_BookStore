@@ -26,4 +26,4 @@ let htmlContainer = document.getElementById('book-article');
 // console.log(htmlContainer);
 
 //On appel la fonction insertBookInfosInArticlePage 
-insertBooksInfosInArticlePage (currentBook, htmlContainer);
+insertBookInfosInArticlePage (currentBook, htmlContainer);

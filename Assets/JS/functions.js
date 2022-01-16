@@ -42,7 +42,7 @@ const bookIdInUrl = (bookId ,page) =>{
 
 // Insérer les livres sur la page article HTML
 
-const insertBooksInfosInArticlePage = (bookInfo, htmlContainer) => {
+const insertBookInfosInArticlePage = (bookInfo, htmlContainer) => {
     // On insère le HTML ds le container, avec les données du livre
     htmlContainer.innerHTML+=`    
     <div class="book-spotlight-left">
